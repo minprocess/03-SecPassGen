@@ -43,6 +43,11 @@ function generatePassword() {
     var numChars = "1234567890".split("");
     charset = charset.concat(numChars);
   }
+  console.log("charset length: ", charset.length);
+  if (charset.length == 0) {
+    alert("None of the checkboxes for the 4 types of characters that can be used in the password have been clicked");
+    return;
+  }
 
   let num = charset.length;
   let passw = '';
