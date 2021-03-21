@@ -1,10 +1,11 @@
 # SecPassGen - A generator for secure passwords
 ## Description
 The web page generates a password composed of random symbols. The random symbols will make the password impossible to guess. The user can choose which types of symbols to use in the password:
-    Lower case letters
-    Upper case letters 
-    Special characters `~!@#$%^&*()-_=+
-    Numbers
+- Lower case letters
+- Upper case letters
+- Special characters `~!@#$%^&*()-_=+
+- Numbers
+</ul>
 The button that the user clicks to generate the password is disabled until the user enters a number 8 or greater.
 This program uses HTML and JavaScript. The JavaScript uses event listeners and the random number generator that generates a uniformally distributed number between 0 and 1, inclusive.
 
@@ -14,16 +15,17 @@ This project can be edited and run using Visual Studio Code. No libraries need t
 ## Usage
 To use this web page, click on a check box for at least one of 4 types of characters (lower case, upper case, special characters and numbers) and enter a number 8 or greater for the number of characters in the generated password.
 If user clicks the Generate Password button but none of the checkboxes for type of character have been check then this alert appears.
-</br>
+</br></br>
 ![Alert](assets/images/alert.png)
-</br>
+</br></br>
 It would be better to not enable the button until one of the checkboxes are checked.
 Here is a screenshot of this web page
+</br></br>
 ![Screenshot](assets/images/screenshot.png)
-
+</br></br>
 ## Suggested Improvements
 1. Generate Password button should be disabled if none of the character-type checkboxes are checked.
-2. Generate Password button should be disabled if the number of characters is higher than some max value. For example, 
+2. Generate Password button should be disabled if the number of characters is higher than some max value. I think a max of 40 characters should be sufficient for extremely secure passwords.
 
 ## License
 MIT License
