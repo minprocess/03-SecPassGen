@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
       <h1>Flexible Secure Password Generator</h1>
     </header>
-    <h2>Specify which characters and the number of characters to use in the password</h2>
-    <form>
-      <p><input type="checkbox" id="checkIdLC"> Use lowcase letters?</p>
-      <p><input type="checkbox" id="checkIdUC"> Use uppercase letters?</p>
-      <p><input type="checkbox" id="checkIdNC"> Use numbers?</p>
-      <p><input type="checkbox" id="checkIdSC"> Use these special characters "`~!@#$%^&*()-_=+" ?</p>
-      <label for="textIDNum">Number of characters in password (at least 8): </label>
-      <input type="text" id="textIdNum" name="textIdNum">
-      <!-- https://www.w3docs.com/tools/code-editor/11418 -->      
-      <!-- https://www.w3docs.com/snippets/javascript/how-to-check-and-uncheck-checkbox-with-javascript-and-jquery.html -->
-    </form>
+    <div class="options">
+      <h2>Specify which characters and the number of characters to use in the password</h2>
+      <form>
+        <p><input type="checkbox" id="checkIdLC"> Use lowcase letters?</p>
+        <p><input type="checkbox" id="checkIdUC"> Use uppercase letters?</p>
+        <p><input type="checkbox" id="checkIdNC"> Use numbers?</p>
+        <p><input type="checkbox" id="checkIdSC"> Use these special characters "`~!@#$%^&*()-_=+" ?</p>
+        <label for="textIDNum">Number of characters in password (at least 8): </label>
+        <input type="text" id="textIdNum" name="textIdNum">
+        <!-- https://www.w3docs.com/tools/code-editor/11418 -->      
+        <!-- https://www.w3docs.com/snippets/javascript/how-to-check-and-uncheck-checkbox-with-javascript-and-jquery.html -->
+      </form>  
+    </div>
 
     <div class="wrapper">
       <div class="card">

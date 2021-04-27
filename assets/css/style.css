@@ -28,6 +28,7 @@ header {
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
+  font-family: sans-serif;
 }
 
 .card {
@@ -134,4 +135,7 @@ button[disabled] {
   .btn {
     font-size: 0.8rem;
   }
+}
+.options {
+  margin: 0 auto;
 }
