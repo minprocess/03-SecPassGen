@@ -10,9 +10,11 @@ The button that the user clicks to generate the password is disabled until the u
 This program uses HTML and JavaScript. The JavaScript uses event listeners and the random number generator that generates a uniformally distributed number between 0 and 1, inclusive.
 
 ## Installation
+The source code is in this GitHub repository: https://github.com/minprocess/03-SecPassGen
 This project can be edited and run using Visual Studio Code. No libraries need to be installed.
 
 ## Usage
+Link to GitHub pages: https://minprocess.github.io/03-SecPassGen/
 To use this web page, click on a check box for at least one of 4 types of characters (lower case, upper case, special characters and numbers) and enter a number 8 or greater for the number of characters in the generated password.
 If user clicks the Generate Password button but none of the checkboxes for type of character have been check then this alert appears.
 </br></br>
