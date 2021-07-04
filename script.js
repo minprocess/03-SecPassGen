@@ -15,15 +15,6 @@ function writePassword() {
 }
 
 function generatePassword() {
-  /************* User Inputs to control what is in password ************* */
-  console.log("    ");
-  console.log("    ");
-  console.log("Secure Password Generator");
-  console.log("useLowerCase checkbox state", useLowerCase.checked);
-  console.log("useUpperCase checkbox state", useUpperCase.checked);
-  console.log("useSpecialChars checkbox state", useSpecialChars.checked);
-  console.log("useNumChars checkbox state", useNumChars.checked);
-  console.log("NumChar", numOfChars.value);  // number of characters in password
 
   /************* Create array of characters to use in password ************* */
   var charset = [];
@@ -36,7 +27,9 @@ function generatePassword() {
     charset = charset.concat(uppercase);
   }
   if (useSpecialChars.checked) {
-    var specialChars = "`~!@#$%^&*()-_=+".split("");
+    // !#$%&?
+    //var specialChars = "`~!@#$%^&*()-_=+".split("");
+    var specialChars = "!#$%&?".split("");
     charset = charset.concat(specialChars);
   }
   if (useNumChars.checked) {
@@ -67,7 +60,7 @@ function generatePassword() {
 // Enable the generate password button if the number of characters is greater than it
 function EnableButton() {
   console.log("Enable button numOfChars.value: ", numOfChars.value)
-  if (numOfChars.value > 7) {
+  if (numOfChars.value > 5) {
     generateBtn.disabled = false;
   }
 }
