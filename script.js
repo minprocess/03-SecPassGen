@@ -36,7 +36,6 @@ function generatePassword() {
     var numChars = "1234567890".split("");
     charset = charset.concat(numChars);
   }
-  console.log("charset length: ", charset.length);
   if (charset.length == 0) {
     alert("None of the checkboxes for the 4 types of characters that can be used in the password have been clicked");
     return;
@@ -59,7 +58,6 @@ function generatePassword() {
 // If there is a keyup event for the text box with number of characters in password
 // Enable the generate password button if the number of characters is greater than it
 function EnableButton() {
-  console.log("Enable button numOfChars.value: ", numOfChars.value)
   if (numOfChars.value > 5) {
     generateBtn.disabled = false;
   }
